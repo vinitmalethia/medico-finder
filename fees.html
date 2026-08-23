@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees - MBBS Fee Structure Comparison | Medico Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fees.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="fees-page">
+
+    <!-- ===== NAVBAR (LIGHT) ===== -->
+    <nav class="navbar fees-navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo fees-logo">
+                <img src="logo.png" alt="Medico Finder Education Pvt. Ltd." class="brand-logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="mbbs-india.html">MBBS India</a></li>
+                <li><a href="mbbs-abroad.html">MBBS Abroad</a></li>
+                <li><a href="neet-ug.html">NEET UG</a></li>
+                <li><a href="fees.html" class="fees-active">Fees</a></li>
+            </ul>
+            <div class="nav-actions-fees">
+                <a href="tel:" class="btn-call-out">Call Now</a>
+                <a href="#" class="btn-book-red-sm">Book Free Session</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="fees-hero">
+        <div class="fees-hero-container">
+            <div class="trust-pill">
+                <i class="fas fa-shield-alt"></i>
+                <span>100% Transparent Pricing. No Hidden Charges.</span>
+            </div>
+            <h1>Comprehensive MBBS Fee<br>Structure Comparison</h1>
+            <p>Make an informed decision. Compare detailed tuition, hostel, and miscellaneous fees across government, private, and deemed universities in India, alongside top destinations abroad.</p>
+            <div class="hero-actions">
+                <a href="#" class="btn-navy-filled"><i class="fas fa-download"></i> View Detailed PDF</a>
+                <a href="#" class="btn-outlined">Consult Expert <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FILTERS ===== -->
+    <section class="fees-filters">
+        <div class="fees-filters-container">
+            <div class="filter-tabs">
+                <button class="filter-tab active">India (Govt/Pvt)</button>
+                <button class="filter-tab">MBBS Abroad</button>
+            </div>
+            <div class="filter-dropdowns">
+                <div class="filter-select">
+                    <select>
+                        <option>All States</option>
+                        <option>Delhi</option>
+                        <option>Maharashtra</option>
+                        <option>Karnataka</option>
+                        <option>Tamil Nadu</option>
+                    </select>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="filter-select">
+                    <select>
+                        <option>All Institution Types</option>
+                        <option>Government</option>
+                        <option>Private</option>
+                        <option>Deemed</option>
+                    </select>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEE TABLE ===== -->
+    <section class="fees-table-section">
+        <div class="fees-table-container">
+            <div class="table-card">
+                <div class="table-header-row">
+                    <h2>Indian Medical Colleges Fee Structure</h2>
+                    <span class="updated-badge">Updated: 2026 Reference Data</span>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="fees-table">
+                        <thead>
+                            <tr>
+                                <th>Institution / State</th>
+                                <th>Type</th>
+                                <th>Tuition Fee (Per Year)</th>
+                                <th>Hostel & Mess (Per Year)</th>
+                                <th>Misc Charges</th>
+                                <th>Total Est. (5.5 Yrs)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>AIIMS, New Delhi</strong>
+                                    <span class="inst-state">Delhi</span>
+                                </td>
+                                <td><span class="type-badge govt">Govt</span></td>
+                                <td>₹ 1,350</td>
+                                <td>₹ 4,228</td>
+                                <td>₹ 2,000 (One time)</td>
+                                <td class="total-col">~ ₹ 35,000</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Grant Medical College</strong>
+                                    <span class="inst-state">Maharashtra</span>
+                                </td>
+                                <td><span class="type-badge govt">Govt</span></td>
+                                <td>₹ 1,14,300</td>
+                                <td>₹ 4,000</td>
+                                <td>₹ 15,000</td>
+                                <td class="total-col">~ ₹ 6.5 Lakhs</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>KMC, Manipal</strong>
+                                    <span class="inst-state">Karnataka</span>
+                                </td>
+                                <td><span class="type-badge deemed">Deemed</span></td>
+                                <td>₹ 17,70,000</td>
+                                <td>₹ 1,45,000</td>
+                                <td>₹ 10,000 (Caution)</td>
+                                <td class="total-col">~ ₹ 95 Lakhs</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Christian Medical College</strong>
+                                    <span class="inst-state">Tamil Nadu</span>
+                                </td>
+                                <td><span class="type-badge private">Private</span></td>
+                                <td>₹ 50,000</td>
+                                <td>₹ 35,000</td>
+                                <td>₹ 25,000</td>
+                                <td class="total-col">~ ₹ 4.5 Lakhs</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>D Y Patil Medical College</strong>
+                                    <span class="inst-state">Maharashtra</span>
+                                </td>
+                                <td><span class="type-badge deemed">Deemed</span></td>
+                                <td>₹ 25,00,000</td>
+                                <td>₹ 2,00,000</td>
+                                <td>₹ 50,000</td>
+                                <td class="total-col">~ ₹ 1.35 Cr</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-footer">
+                    <p class="table-note">* Fees are indicative and subject to change based on university notifications.</p>
+                </div>
+            </div>
+
+            <!-- ===== DELHI STATE QUOTA & AIQ FEE STRUCTURE ===== -->
+            <div class="table-card" style="margin-top: 36px;">
+                <div class="table-header-row">
+                    <div>
+                        <h2>Delhi State Quota & AIQ Fee Structure</h2>
+                        <p style="font-size:0.82rem; color:var(--text-gray); margin-top:2px;">Annual fee structure for Central & State Colleges in Delhi NCR for All India Quota candidates.</p>
+                    </div>
+                    <span class="badge badge-green">9 Premier Institutions</span>
+                </div>
+
+                <div class="delhi-fee-cards-grid">
+                    <div class="df-card">
+                        <div class="df-top">
+                            <h4>AIIMS New Delhi</h4>
+                            <span class="type-badge govt">Central Govt</span>
+                        </div>
+                        <div class="df-fee-box">
+                            <span>Annual Tuition Fee</span>
+                            <strong>₹ 1,628 / yr</strong>
+                        </div>
+                    </div>
+
+                    <div class="df-card">
+                        <div class="df-top">
+                            <h4>Maulana Azad Medical College (MAMC)</h4>
+                            <span class="type-badge govt">Govt (DU)</span>
+                        </div>
+                        <div class="df-fee-box">
+                            <span>Annual Tuition Fee</span>
+                            <strong>₹ 2,745 / yr</strong>
+                        </div>
+                    </div>
+
+                    <div class="df-card">
+                        <div class="df-top">
+                            <h4>Lady Hardinge Medical College</h4>
+                            <span class="type-badge govt">Govt (DU)</span>
+                        </div>
+                        <div class="df-fee-box">
+                            <span>Annual Tuition Fee</span>
+                            <strong>₹ 1,655 / yr</strong>
+                        </div>
+                    </div>
+
+                    <div class="df-card">
+                        <div class="df-top">
+                            <h4>VMMC & Safdarjung Hospital</h4>
+                            <span class="type-badge govt">Govt (IPU)</span>
+                        </div>
+                        <div class="df-fee-box">
+                            <span>Annual Tuition Fee</span>
+                            <strong>₹ 15,000 / yr</strong>
+                        </div>
+                    </div>
+
+                    <div class="df-card">
+                        <div class="df-top">
+                            <h4>UCMS (University College of Med. Sci.)</h4>
+                            <span class="type-badge govt">Govt (DU)</span>
+                        </div>
+                        <div class="df-fee-box">
+                            <span>Annual Tuition Fee</span>
+                            <strong>₹ 30,750 / yr</strong>
+                        </div>
+                    </div>
+
+                    <div class="df-card">
+                        <div class="df-top">
+                            <h4>NDMC Medical College (Hindu Rao)</h4>
+                            <span class="type-badge govt">Govt (IPU)</span>
+                        </div>
+                        <div class="df-fee-box">
+                            <span>Annual Tuition Fee</span>
+                            <strong>₹ 50,000 / yr</strong>
+                        </div>
+                    </div>
+
+                    <div class="df-card">
+                        <div class="df-top">
+                            <h4>Dr. B.S.A Medical College</h4>
+                            <span class="type-badge govt">Govt (IPU)</span>
+                        </div>
+                        <div class="df-fee-box">
+                            <span>Annual Tuition Fee</span>
+                            <strong>₹ 1,04,500 / yr</strong>
+                        </div>
+                    </div>
+
+                    <div class="df-card">
+                        <div class="df-top">
+                            <h4>Army College of Medical Sciences (ACMS)</h4>
+                            <span class="type-badge private">Army Quota</span>
+                        </div>
+                        <div class="df-fee-box">
+                            <span>Annual Tuition Fee</span>
+                            <strong>₹ 5,55,700 / yr</strong>
+                        </div>
+                    </div>
+
+                    <div class="df-card">
+                        <div class="df-top">
+                            <h4>Jamia Hamdard (HIMSR)</h4>
+                            <span class="type-badge deemed">Deemed</span>
+                        </div>
+                        <div class="df-fee-box">
+                            <span>Annual Tuition Fee</span>
+                            <strong>₹ 16,00,000 / yr</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== GOVERNMENT MEDICAL COLLEGES: FEES & STAY STATUS ===== -->
+            <div class="table-card" style="margin-top: 36px;">
+                <div class="table-header-row">
+                    <div>
+                        <h2>Government Medical Colleges: Fees & Stay Status</h2>
+                        <p style="font-size:0.82rem; color:var(--text-gray); margin-top:2px;">Government medical colleges offer the highest Return on Investment (ROI) with heavily subsidized accommodation.</p>
+                    </div>
+                    <span class="badge badge-green">Highest ROI</span>
+                </div>
+
+                <div class="delhi-fee-cards-grid">
+                    <div class="df-card">
+                        <div class="df-top">
+                            <h4>AIIMS New Delhi</h4>
+                            <span class="type-badge govt">Delhi</span>
+                        </div>
+                        <div class="df-fee-box">
+                            <span>Approx. Total MBBS Fee</span>
+                            <strong>₹ 6,280 – ₹ 7,000 (Total)</strong>
+                        </div>
+                        <div class="stay-note"><i class="fas fa-bed"></i> In-campus mandatory. Nominal (~₹1,000/yr).</div>
+                    </div>
+
+                    <div class="df-card">
+                        <div class="df-top">
+                            <h4>Maulana Azad Medical College (MAMC)</h4>
+                            <span class="type-badge govt">Delhi</span>
+                        </div>
+                        <div class="df-fee-box">
+                            <span>Approx. Total MBBS Fee</span>
+                            <strong>₹ 14,125 (Total)</strong>
+                        </div>
+                        <div class="stay-note"><i class="fas fa-bed"></i> Govt. Hostels (₹1.5k–₹5k/yr). Subsidized mess.</div>
+                    </div>
+
+                    <div class="df-card">
+                        <div class="df-top">
+                            <h4>JIPMER Puducherry</h4>
+                            <span class="type-badge govt">Puducherry</span>
+                        </div>
+                        <div class="df-fee-box">
+                            <span>Approx. Total MBBS Fee</span>
+                            <strong>₹ 35,075 (Total)</strong>
+                        </div>
+                        <div class="stay-note"><i class="fas fa-bed"></i> Premium campus. ~₹15k–₹20k/yr room & mess.</div>
+                    </div>
+
+                    <div class="df-card">
+                        <div class="df-top">
+                            <h4>AIIMS Bhubaneswar & Rajkot</h4>
+                            <span class="type-badge govt">Odisha / Guj</span>
+                        </div>
+                        <div class="df-fee-box">
+                            <span>Approx. Total MBBS Fee</span>
+                            <strong>₹ 26,000 – ₹ 30,000</strong>
+                        </div>
+                        <div class="stay-note"><i class="fas fa-bed"></i> Campus hostels. Mess approx ₹3,500/month.</div>
+                    </div>
+
+                    <div class="df-card">
+                        <div class="df-top">
+                            <h4>KGMU Lucknow</h4>
+                            <span class="type-badge govt">Uttar Pradesh</span>
+                        </div>
+                        <div class="df-fee-box">
+                            <span>Approx. Total MBBS Fee</span>
+                            <strong>₹ 1.23L – ₹ 2.20L</strong>
+                        </div>
+                        <div class="stay-note"><i class="fas fa-bed"></i> Annual stay & mess expenses ~₹20k–₹30k.</div>
+                    </div>
+
+                    <div class="df-card">
+                        <div class="df-top">
+                            <h4>Stanley Medical College</h4>
+                            <span class="type-badge govt">Tamil Nadu</span>
+                        </div>
+                        <div class="df-fee-box">
+                            <span>Approx. Total MBBS Fee</span>
+                            <strong>₹ 90,000 – ₹ 1.00L</strong>
+                        </div>
+                        <div class="stay-note"><i class="fas fa-bed"></i> In-campus stay available at affordable govt rates.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== PRIVATE & DEEMED MEDICAL COLLEGES 5.5-YR MATRIX ===== -->
+            <div class="table-card" style="margin-top: 36px;">
+                <div class="table-header-row">
+                    <div>
+                        <h2>Private & Deemed Medical Colleges Matrix (5.5 Years Budget)</h2>
+                        <p style="font-size:0.82rem; color:var(--text-gray); margin-top:2px;">Complete 5.5-year tuition range alongside annual accommodation & mess cost estimates.</p>
+                    </div>
+                    <span class="badge badge-red">₹40L – ₹2 Cr Full Course Range</span>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="fees-table">
+                        <thead>
+                            <tr>
+                                <th>College Name</th>
+                                <th>State</th>
+                                <th>Category</th>
+                                <th>Approx. Total Tuition (5.5 Yrs)</th>
+                                <th>Hostel & Stay Avg. / Year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>JSS Medical College</strong></td>
+                                <td>Karnataka</td>
+                                <td><span class="type-badge deemed">Deemed</span></td>
+                                <td class="total-col">₹ 1.00 Cr – ₹ 1.20 Cr</td>
+                                <td>₹ 1.50 Lakhs – ₹ 2.00 Lakhs</td>
+                            </tr>
+                            <tr>
+                                <td><strong>SRM Medical College</strong></td>
+                                <td>Tamil Nadu</td>
+                                <td><span class="type-badge deemed">Deemed</span></td>
+                                <td class="total-col">₹ 1.13 Cr – ₹ 1.40 Cr</td>
+                                <td>₹ 1.80 Lakhs – ₹ 2.50 Lakhs</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Geetanjali Medical College</strong></td>
+                                <td>Rajasthan</td>
+                                <td><span class="type-badge private">Private</span></td>
+                                <td class="total-col">₹ 1.20 Cr – ₹ 1.70 Cr</td>
+                                <td>₹ 2.00 Lakhs – ₹ 2.50 Lakhs</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bharati Vidyapeeth</strong></td>
+                                <td>Maharashtra</td>
+                                <td><span class="type-badge deemed">Deemed</span></td>
+                                <td class="total-col">₹ 1.28 Cr – ₹ 1.30 Cr</td>
+                                <td>₹ 1.75 Lakhs – ₹ 2.25 Lakhs</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dr. DY Patil Medical College</strong></td>
+                                <td>Pune / Navi Mumbai</td>
+                                <td><span class="type-badge deemed">Deemed</span></td>
+                                <td class="total-col">₹ 1.40 Cr – ₹ 1.60 Cr</td>
+                                <td>₹ 2.50 Lakhs – ₹ 3.50 Lakhs (Premium)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sri Ramachandra Medical College</strong></td>
+                                <td>Tamil Nadu</td>
+                                <td><span class="type-badge deemed">Deemed</span></td>
+                                <td class="total-col">₹ 1.45 Cr – ₹ 1.60 Cr</td>
+                                <td>₹ 2.00 Lakhs – ₹ 2.50 Lakhs</td>
+                            </tr>
+                            <tr>
+                                <td><strong>MGM Medical College</strong></td>
+                                <td>Navi Mumbai</td>
+                                <td><span class="type-badge deemed">Deemed</span></td>
+                                <td class="total-col">₹ 1.20 Cr – ₹ 1.30 Cr</td>
+                                <td>₹ 1.50 Lakhs – ₹ 2.20 Lakhs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- ===== 39 DEEMED MEDICAL COLLEGES FEE EXPLORER ===== -->
+            <div class="table-card" style="margin-top: 36px;">
+                <div class="table-header-row">
+                    <div>
+                        <h2>Comprehensive Deemed Medical Universities Fees (39 Colleges)</h2>
+                        <p style="font-size:0.82rem; color:var(--text-gray); margin-top:2px;">Complete tuition fee breakdown for Management Quota & General seats in Deemed Universities.</p>
+                    </div>
+                    <span class="badge badge-red">₹10L – ₹26L / yr Range</span>
+                </div>
+
+                <div class="deemed-cards-grid" id="deemedCardsContainer">
+                    <!-- Rendered via JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="fees-cta">
+        <div class="fees-cta-container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h3>Need the complete state-wise<br>breakdown?</h3>
+                    <p>Download our meticulously compiled PDF containing fee structures for over 500+ medical colleges across India and 15+ countries abroad. Updated weekly.</p>
+                    <div class="cta-form">
+                        <input type="email" placeholder="Enter your email address">
+                        <button class="btn-get-pdf">Get Free PDF</button>
+                    </div>
+                </div>
+                <div class="cta-icon">
+                    <i class="far fa-file-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer fees-footer">
+        <div class="fees-footer-main">
+            <div class="fees-footer-container">
+                <div class="fees-footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <div class="logo-icon square">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <span>Medico Finder</span>
+                    </a>
+                    <p>Guiding medical aspirants to their dream colleges with transparent, expert counselling.</p>
+                </div>
+                <div class="fees-footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Quick Links</a></li>
+                        <li><a href="#">Contact Info</a></li>
+                    </ul>
+                </div>
+                <div class="fees-footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Download Prospectus</a></li>
+                    </ul>
+                </div>
+                <div class="fees-footer-links">
+                    <h4>Reach Us</h4>
+                    <ul>
+                        <li><a href="mailto:admissions@medicofinder.com"><i class="far fa-envelope"></i> admissions@medicofinder.com</a></li>
+                        <li><a href="tel:+9118001234567"><i class="fas fa-phone-alt"></i> +91 1800-123-4567</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="fees-footer-bottom">
+            <p>&copy; 2024 Medico Finder Education Pvt. Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ===== FLOATING BUTTONS ===== -->
+    <div class="floating-buttons fees-floating">
+        <a href="#" class="floating-btn msg-btn"><i class="fas fa-comment-dots"></i></a>
+        <a href="tel:" class="floating-btn call-btn"><i class="fas fa-phone-alt"></i></a>
+    </div>
+
+    <script src="college-data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.filter-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+            });
+        });
+
+        // Render 39 Deemed Medical Colleges Fee Cards
+        const deemedContainer = document.getElementById('deemedCardsContainer');
+        if (deemedContainer && typeof COLLEGE_DATA !== 'undefined' && COLLEGE_DATA.deemedFees) {
+            let html = '';
+            COLLEGE_DATA.deemedFees.forEach(item => {
+                html += `
+                    <div class="deemed-fee-card">
+                        <div class="dfc-top">
+                            <span class="dfc-num">#${item.sr}</span>
+                            <span class="badge badge-blue">Deemed</span>
+                        </div>
+                        <h4 class="dfc-name">${item.college}</h4>
+                        <div class="dfc-loc"><i class="fas fa-map-marker-alt"></i> ${item.location}</div>
+                        <div class="dfc-fee">
+                            <small>Yearly Tuition Fee</small>
+                            <strong>${item.fee}</strong>
+                        </div>
+                    </div>
+                `;
+            });
+            deemedContainer.innerHTML = html;
+        }
+    </script>
+</body>
+</html>

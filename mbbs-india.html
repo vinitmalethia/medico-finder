@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBBS Admissions in India - Medico Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mbbs-india.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="mbbs-india-page">
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar india-navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Medico Finder Education Pvt. Ltd." class="brand-logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="mbbs-india.html" class="india-active">MBBS India</a></li>
+                <li><a href="mbbs-abroad.html">MBBS Abroad</a></li>
+                <li><a href="neet-ug.html">NEET UG</a></li>
+                <li><a href="fees.html">Fees</a></li>
+                <li><a href="tel:" class="nav-call">Call Now</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="#" class="btn-book-red-nav">Book Free Session</a>
+                <a href="#" class="nav-chat-icon"><i class="fas fa-comment-dots"></i></a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO BANNER ===== -->
+    <section class="india-hero">
+        <div class="india-hero-container">
+            <div class="india-hero-banner">
+                <div class="hero-banner-overlay"></div>
+                <div class="hero-banner-content">
+                    <h1>MBBS Admissions in India</h1>
+                    <p>Navigate the complex landscape of NEET UG counseling and state quota admissions with confidence. Explore top medical colleges, understand fee structures, and secure your seat with expert guidance.</p>
+                    <div class="hero-banner-actions">
+                        <a href="#" class="btn-red-filled">Check NEET Cutoff</a>
+                        <a href="#" class="btn-dark-outlined">Download Prospectus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TRUST BADGES ===== -->
+    <section class="india-trust">
+        <div class="india-trust-container">
+            <div class="india-trust-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>NMC Approved</span>
+            </div>
+            <div class="india-trust-item">
+                <i class="fas fa-balance-scale"></i>
+                <span>Govt. & Private Quotas</span>
+            </div>
+            <div class="india-trust-item">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <span>Transparent Fees</span>
+            </div>
+            <div class="india-trust-item">
+                <i class="fas fa-hands-helping"></i>
+                <span>End-to-End Counseling</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MAIN CONTENT: STATES + SIDEBAR ===== -->
+    <section class="india-main">
+        <div class="india-main-container">
+
+            <!-- LEFT: State Tabs + Cards -->
+            <div class="india-left">
+
+                <!-- State Tabs -->
+                <div class="state-tabs">
+                    <button class="state-tab active" data-state="all">All States</button>
+                    <button class="state-tab" data-state="karnataka">Karnataka</button>
+                    <button class="state-tab" data-state="maharashtra">Maharashtra</button>
+                    <button class="state-tab" data-state="up">Uttar Pradesh</button>
+                    <button class="state-tab" data-state="delhi">Delhi NCR</button>
+                </div>
+
+                <!-- State Cards Grid -->
+                <div class="state-cards-grid">
+
+                    <!-- Karnataka -->
+                    <div class="state-card navy-border" data-state="karnataka">
+                        <div class="state-card-header">
+                            <h3>Karnataka</h3>
+                            <span class="badge badge-green">Open State</span>
+                        </div>
+                        <div class="state-card-sub">
+                            <i class="fas fa-university"></i> KEA Counseling
+                        </div>
+                        <div class="top-colleges">
+                            <p class="top-colleges-label">TOP COLLEGES</p>
+                            <ul>
+                                <li>KMC Manipal</li>
+                                <li>St. John's Medical College</li>
+                                <li>MS Ramaiah Medical College</li>
+                            </ul>
+                        </div>
+                        <div class="state-card-stats">
+                            <div>
+                                <span class="stat-label">Avg. Tuition Fee</span>
+                                <strong>₹10L – ₹22L / yr</strong>
+                            </div>
+                            <div>
+                                <span class="stat-label">Safe NEET Score</span>
+                                <strong>450+ (Pvt Mgt)</strong>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-view-colleges">View College List</a>
+                    </div>
+
+                    <!-- Uttar Pradesh -->
+                    <div class="state-card red-border" data-state="up">
+                        <div class="state-card-header">
+                            <h3>Uttar Pradesh</h3>
+                            <span class="badge badge-red"><i class="fas fa-fire"></i> High Demand</span>
+                        </div>
+                        <div class="state-card-sub">
+                            <i class="fas fa-university"></i> UPDGME Counseling
+                        </div>
+                        <div class="top-colleges">
+                            <p class="top-colleges-label">TOP COLLEGES</p>
+                            <ul>
+                                <li>SRMS Bareilly</li>
+                                <li>Sharda University</li>
+                                <li>Subharti Medical College</li>
+                            </ul>
+                        </div>
+                        <div class="state-card-stats">
+                            <div>
+                                <span class="stat-label">Avg. Tuition Fee</span>
+                                <strong>₹11L – ₹16L / yr</strong>
+                            </div>
+                            <div>
+                                <span class="stat-label">Safe NEET Score</span>
+                                <strong>300+ (Pvt)</strong>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-view-colleges">View College List</a>
+                    </div>
+
+                    <!-- Maharashtra -->
+                    <div class="state-card navy-border" data-state="maharashtra">
+                        <div class="state-card-header">
+                            <h3>Maharashtra</h3>
+                            <span class="badge badge-gray">Closed State</span>
+                        </div>
+                        <div class="state-card-sub">
+                            <i class="fas fa-university"></i> State CET Cell
+                        </div>
+                        <div class="top-colleges">
+                            <p class="top-colleges-label">TOP COLLEGES</p>
+                            <ul>
+                                <li>DY Patil Pune</li>
+                                <li>Bharati Vidyapeeth</li>
+                                <li>MGM Navi Mumbai</li>
+                            </ul>
+                        </div>
+                        <div class="state-card-stats">
+                            <div>
+                                <span class="stat-label">Avg. Tuition Fee</span>
+                                <strong>₹8L – ₹25L / yr</strong>
+                            </div>
+                            <div>
+                                <span class="stat-label">Safe NEET Score</span>
+                                <strong>500+ (State Q)</strong>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-view-colleges">View College List</a>
+                    </div>
+
+                    <!-- Delhi NCR -->
+                    <div class="state-card navy-border" data-state="delhi">
+                        <div class="state-card-header">
+                            <h3>Delhi NCR</h3>
+                        </div>
+                        <div class="state-card-sub">
+                            <i class="fas fa-university"></i> MCC / State
+                        </div>
+                        <div class="top-colleges">
+                            <p class="top-colleges-label">TOP COLLEGES</p>
+                            <ul>
+                                <li>MAMC</li>
+                                <li>VMMC</li>
+                                <li>UCMS</li>
+                            </ul>
+                        </div>
+                        <div class="state-card-stats">
+                            <div>
+                                <span class="stat-label">Avg. Tuition Fee</span>
+                                <strong>Govt: Very Low</strong>
+                            </div>
+                            <div>
+                                <span class="stat-label">Safe NEET Score</span>
+                                <strong>650+ (DU Quota)</strong>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-view-colleges">View College List</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- RIGHT SIDEBAR -->
+            <div class="india-sidebar">
+
+                <!-- Counselling Form Card -->
+                <div class="sidebar-form-card" id="contactForm">
+                    <div class="sidebar-form-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Confused about State Quotas?</h3>
+                    <p>Speak directly with our expert medical counsellors to understand domicile rules, bond conditions, and realistic options based on your NEET score.</p>
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="tel" placeholder="Mobile Number" required>
+                        <input type="text" placeholder="Expected NEET Score">
+                        <button type="submit" class="btn-request-callback">Request Callback</button>
+                    </form>
+                    <span class="form-note">100% Free Consultation. No commitments.</span>
+                </div>
+
+                <!-- Admission Resources Card -->
+                <div class="sidebar-resources-card">
+                    <h3>Admission Resources</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-chart-bar"></i>
+                            <span>NEET Cutoff Percentile Analysis</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-university"></i>
+                            <span>Deemed University Fee Structures</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-gavel"></i>
+                            <span>State-wise Bond Details</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Counseling Schedule & Seat Matrices</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COMPREHENSIVE COLLEGE DIRECTORY (MBBS | BDS | BVSc) ===== -->
+    <section class="college-directory-section">
+        <div class="section-container">
+            <div class="directory-header">
+                <div>
+                    <span class="badge badge-green"><i class="fas fa-database"></i> Verified Directory</span>
+                    <h2>India Medical Colleges Directory (Rank-Wise & NIRF)</h2>
+                    <p>Explore verified cutoff scores, seats, and rankings for Top MBBS, BDS (Dental), and BVSc (Veterinary) institutions across India.</p>
+                </div>
+                <div class="directory-course-tabs">
+                    <button class="dir-tab active" data-course="mbbs">Top 50 MBBS</button>
+                    <button class="dir-tab" data-course="govt">Affordable Govt</button>
+                    <button class="dir-tab" data-course="bds">Top 40 BDS</button>
+                    <button class="dir-tab" data-course="bvsc">BVSc (Veterinary)</button>
+                    <button class="dir-tab" data-course="cutoffs">NEET Cutoffs</button>
+                </div>
+            </div>
+
+            <!-- SEARCH & FILTER BAR -->
+            <div class="directory-filter-bar">
+                <div class="search-input-wrap">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="dirSearchInput" placeholder="Search by college name, city or state...">
+                </div>
+                <div class="dir-type-filter" id="dirTypeFilterWrap">
+                    <button class="dir-type-btn active" data-type="all">All Types</button>
+                    <button class="dir-type-btn" data-type="Govt">Government</button>
+                    <button class="dir-type-btn" data-type="Private">Private</button>
+                    <button class="dir-type-btn" data-type="Deemed">Deemed</button>
+                </div>
+            </div>
+
+            <!-- DYNAMIC TABLE CONTAINER -->
+            <div class="directory-table-wrap">
+                <div id="dirTableContent">
+                    <!-- Populated dynamically via JS from college-data.js -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MEDICAL FRATERNITY COMMUNITY SHOWCASE ===== -->
+    <section class="india-community-section">
+        <div class="india-community-container">
+            <div class="community-image-box">
+                <img src="doctors_stethoscopes.jpg" alt="Medical Doctors & Aspirants Unity" class="community-img">
+                <div class="community-badge-float">
+                    <i class="fas fa-stethoscope"></i>
+                    <span>Your White Coat Journey Starts Here</span>
+                </div>
+            </div>
+            <div class="community-text-box">
+                <span class="badge badge-green"><i class="fas fa-heartbeat"></i> Medical Legacy</span>
+                <h2>Transforming NEET Aspirants into Certified Doctors</h2>
+                <p>Wearing the stethoscope is the dream of over 20 lakh students every year. Medico Finder bridges the gap between high ranks and dream colleges through meticulous seat mapping, category-specific counselling, and end-to-end documentation.</p>
+                <div class="community-stats-grid">
+                    <div class="cs-item">
+                        <strong>10,000+</strong>
+                        <span>Doctors Counselled</span>
+                    </div>
+                    <div class="cs-item">
+                        <strong>15+</strong>
+                        <span>Years Medical Guidance</span>
+                    </div>
+                    <div class="cs-item">
+                        <strong>100%</strong>
+                        <span>MCI / NMC Compliant</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer india-footer">
+        <div class="india-footer-main">
+            <div class="india-footer-container">
+                <div class="india-footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <div class="logo-icon square">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <span>Medico Finder</span>
+                    </a>
+                    <p>Guiding your medical career with expert counseling and transparent admission processes.</p>
+                </div>
+                <div class="india-footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Contact Info</a></li>
+                    </ul>
+                </div>
+                <div class="india-footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="india-footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Quick Links</a></li>
+                        <li><a href="#">Download Prospectus</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="india-footer-bottom">
+            <p>&copy; 2024 Medico Finder Education Pvt. Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ===== FLOATING BUTTONS ===== -->
+    <div class="floating-buttons india-floating">
+        <a href="#" class="floating-btn msg-btn">
+            <i class="fas fa-comment-dots"></i>
+        </a>
+        <a href="tel:" class="floating-btn call-btn">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <script src="college-data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // State tab filtering
+        document.querySelectorAll('.state-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.state-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                const state = tab.dataset.state;
+                document.querySelectorAll('.state-card').forEach(card => {
+                    if (state === 'all' || card.dataset.state === state) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Directory Tabs & Interactive Rendering
+        let currentCourse = 'mbbs';
+        let currentType = 'all';
+        let searchQuery = '';
+
+        const dirContent = document.getElementById('dirTableContent');
+        const searchInput = document.getElementById('dirSearchInput');
+        const typeFilterWrap = document.getElementById('dirTypeFilterWrap');
+
+        function renderDirectory() {
+            if (!dirContent) return;
+
+            if (currentCourse === 'mbbs') {
+                typeFilterWrap.style.display = 'flex';
+                let filtered = COLLEGE_DATA.top50MBBS.filter(c => {
+                    const matchType = currentType === 'all' || c.type.toLowerCase() === currentType.toLowerCase();
+                    const q = searchQuery.toLowerCase();
+                    const matchQuery = !q || c.college.toLowerCase().includes(q) || c.city.toLowerCase().includes(q) || c.state.toLowerCase().includes(q);
+                    return matchType && matchQuery;
+                });
+
+                if (filtered.length === 0) {
+                    dirContent.innerHTML = `<div class="empty-state"><i class="fas fa-search"></i><p>No medical colleges found matching your search.</p></div>`;
+                    return;
+                }
+
+                let html = `<div class="college-cards-grid">`;
+                filtered.forEach(item => {
+                    const badgeClass = item.type.toLowerCase();
+                    const borderClass = item.type === 'Govt' ? 'govt-card' : item.type === 'Private' ? 'pvt-card' : 'deemed-card';
+                    html += `
+                        <div class="dir-college-card ${borderClass}">
+                            <div class="dcc-top">
+                                <span class="dcc-rank">NIRF #${item.rank}</span>
+                                <span class="badge ${badgeClass}">${item.type}</span>
+                            </div>
+                            <h3 class="dcc-name">${item.college}</h3>
+                            <div class="dcc-loc">
+                                <i class="fas fa-map-marker-alt"></i> ${item.city}, ${item.state}
+                            </div>
+                            <div class="dcc-meta-row">
+                                <div class="dcc-meta">
+                                    <span>Est. Year</span>
+                                    <strong>${item.est}</strong>
+                                </div>
+                                <div class="dcc-meta">
+                                    <span>MBBS Seats</span>
+                                    <strong>${item.seats} Seats</strong>
+                                </div>
+                            </div>
+                            <a href="#contactForm" class="dcc-btn">Get Cutoff & Fees <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    `;
+                });
+                html += `</div>`;
+                dirContent.innerHTML = html;
+
+            } else if (currentCourse === 'govt') {
+                typeFilterWrap.style.display = 'none';
+                let filtered = COLLEGE_DATA.topAffordableGovt.filter(c => {
+                    const q = searchQuery.toLowerCase();
+                    return !q || c.college.toLowerCase().includes(q) || c.state.toLowerCase().includes(q);
+                });
+
+                if (filtered.length === 0) {
+                    dirContent.innerHTML = `<div class="empty-state"><i class="fas fa-search"></i><p>No government colleges found.</p></div>`;
+                    return;
+                }
+
+                let html = `<div class="college-cards-grid">`;
+                filtered.forEach(item => {
+                    html += `
+                        <div class="dir-college-card govt-card">
+                            <div class="dcc-top">
+                                <span class="dcc-rank">Govt #${item.rank}</span>
+                                <span class="badge badge-green">Central / State Govt</span>
+                            </div>
+                            <h3 class="dcc-name">${item.college}</h3>
+                            <div class="dcc-loc">
+                                <i class="fas fa-map-marker-alt"></i> ${item.state}
+                            </div>
+                            <div class="dcc-meta-row">
+                                <div class="dcc-meta">
+                                    <span>Total Course Fee</span>
+                                    <strong style="color:#10b981;">${item.fee}</strong>
+                                </div>
+                                <div class="dcc-meta">
+                                    <span>Hostel & Stay</span>
+                                    <strong>${item.stay}</strong>
+                                </div>
+                            </div>
+                            <a href="#contactForm" class="dcc-btn">Check Seat Availability <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    `;
+                });
+                html += `</div>`;
+                dirContent.innerHTML = html;
+
+            } else if (currentCourse === 'bds') {
+                typeFilterWrap.style.display = 'none';
+                let filtered = COLLEGE_DATA.topBDS.filter(c => {
+                    const q = searchQuery.toLowerCase();
+                    return !q || c.college.toLowerCase().includes(q) || c.city.toLowerCase().includes(q) || c.state.toLowerCase().includes(q);
+                });
+
+                if (filtered.length === 0) {
+                    dirContent.innerHTML = `<div class="empty-state"><i class="fas fa-search"></i><p>No dental colleges found.</p></div>`;
+                    return;
+                }
+
+                let html = `<div class="college-cards-grid">`;
+                filtered.forEach(item => {
+                    html += `
+                        <div class="dir-college-card deemed-card">
+                            <div class="dcc-top">
+                                <span class="dcc-rank">Dental Rank #${item.rank}</span>
+                                <span class="badge badge-green">BDS</span>
+                            </div>
+                            <h3 class="dcc-name">${item.college}</h3>
+                            <div class="dcc-loc">
+                                <i class="fas fa-map-marker-alt"></i> ${item.city}, ${item.state}
+                            </div>
+                            <div class="dcc-meta-row">
+                                <div class="dcc-meta">
+                                    <span>Course Duration</span>
+                                    <strong>5 Years</strong>
+                                </div>
+                                <div class="dcc-meta">
+                                    <span>Admission</span>
+                                    <strong>NEET UG</strong>
+                                </div>
+                            </div>
+                            <a href="#contactForm" class="dcc-btn">View Seat Matrix <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    `;
+                });
+                html += `</div>`;
+                dirContent.innerHTML = html;
+
+            } else if (currentCourse === 'bvsc') {
+                typeFilterWrap.style.display = 'none';
+                let filtered = COLLEGE_DATA.topBVSc.filter(c => {
+                    const q = searchQuery.toLowerCase();
+                    return !q || c.college.toLowerCase().includes(q) || c.location.toLowerCase().includes(q);
+                });
+
+                let html = `<div class="college-cards-grid">`;
+                filtered.forEach((item, index) => {
+                    html += `
+                        <div class="dir-college-card pvt-card">
+                            <div class="dcc-top">
+                                <span class="dcc-rank">BVSc #${index + 1}</span>
+                                <span class="badge badge-red">Veterinary</span>
+                            </div>
+                            <h3 class="dcc-name">${item.college}</h3>
+                            <div class="dcc-loc">
+                                <i class="fas fa-map-marker-alt"></i> ${item.location}
+                            </div>
+                            <div class="dcc-meta-row">
+                                <div class="dcc-meta">
+                                    <span>Est. Govt Fee</span>
+                                    <strong>${item.fees}</strong>
+                                </div>
+                                <div class="dcc-meta">
+                                    <span>Founded</span>
+                                    <strong>${item.founded}</strong>
+                                </div>
+                            </div>
+                            <a href="#contactForm" class="dcc-btn">Check Eligibility <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    `;
+                });
+                html += `</div>`;
+                dirContent.innerHTML = html;
+
+            } else if (currentCourse === 'cutoffs') {
+                typeFilterWrap.style.display = 'none';
+                let html = `
+                    <div class="cutoff-cards-grid">
+                        <div class="cutoff-box-card">
+                            <div class="cbc-header">
+                                <i class="fas fa-university"></i>
+                                <div>
+                                    <h4>Government MBBS Colleges Cutoff</h4>
+                                    <span>Percentile & Score Comparison (2025 vs 2024)</span>
+                                </div>
+                            </div>
+                            <div class="cbc-list">
+                `;
+                COLLEGE_DATA.neetCutoffsGovt.forEach(c => {
+                    html += `
+                        <div class="cbc-item">
+                            <div class="cbc-cat"><strong>${c.category}</strong></div>
+                            <div class="cbc-score-box">
+                                <div><small>2025 Score</small><strong>${c.s2025}</strong></div>
+                                <div><small>2024 Score</small><span>${c.s2024}</span></div>
+                            </div>
+                        </div>
+                    `;
+                });
+                html += `
+                            </div>
+                        </div>
+
+                        <div class="cutoff-box-card">
+                            <div class="cbc-header red">
+                                <i class="fas fa-user-md"></i>
+                                <div>
+                                    <h4>Private & Deemed Colleges Cutoff</h4>
+                                    <span>Expected NEET Qualifying Score Ranges</span>
+                                </div>
+                            </div>
+                            <div class="cbc-list">
+                `;
+                COLLEGE_DATA.neetCutoffsPrivate.forEach(c => {
+                    html += `
+                        <div class="cbc-item">
+                            <div class="cbc-cat"><strong>${c.category}</strong></div>
+                            <div class="cbc-score-box">
+                                <div><small>Min. Percentile</small><strong>${c.percentile}</strong></div>
+                                <div><small>Score Range</small><span style="color:var(--primary-red); font-weight:700;">${c.score}</span></div>
+                            </div>
+                        </div>
+                    `;
+                });
+                html += `
+                            </div>
+                        </div>
+                    </div>
+                `;
+                dirContent.innerHTML = html;
+            }
+        }
+
+        // Event Listeners for Directory
+        document.querySelectorAll('.dir-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.dir-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                currentCourse = tab.dataset.course;
+                renderDirectory();
+            });
+        });
+
+        document.querySelectorAll('.dir-type-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.dir-type-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentType = btn.dataset.type;
+                renderDirectory();
+            });
+        });
+
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                searchQuery = e.target.value;
+                renderDirectory();
+            });
+        }
+
+        // Initial Directory Render
+        renderDirectory();
+    </script>
+</body>
+</html>
