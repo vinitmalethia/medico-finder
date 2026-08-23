@@ -608,64 +608,160 @@
             </div>
 
             <!-- 6-YEAR TOTAL BUDGET & LIVING BREAKDOWN (2026 DATA) -->
-            <div class="table-card" style="margin-top: 36px;">
-                <div class="table-header-row">
+            <div class="budget-breakdown-section" style="margin-top: 48px;">
+                <div class="table-header-row" style="margin-bottom: 24px;">
                     <div>
                         <h2>MBBS Abroad: Comprehensive 6-Year Cost & Stay Breakdown (2026 Data)</h2>
-                        <p style="font-size:0.82rem; color:var(--text-gray); margin-top:2px;">Compare yearly tuition, Indian mess availability, and total estimated 6-year budgets across focus destinations.</p>
+                        <p style="font-size:0.86rem; color:var(--text-gray); margin-top:3px;">Compare yearly tuition, Indian mess availability, and total estimated 6-year budgets across focus destinations.</p>
                     </div>
-                    <span class="badge badge-green">NMC Compliant</span>
+                    <span class="badge badge-green" style="font-size:0.82rem; padding: 6px 14px;"><i class="fas fa-shield-alt"></i> NMC Compliant</span>
                 </div>
 
-                <div class="table-wrapper">
-                    <table class="fees-table">
-                        <thead>
-                            <tr>
-                                <th>Country / Focus Route</th>
-                                <th>Avg. Tuition / Year</th>
-                                <th>Hostel & Living / Year</th>
-                                <th>Total 6-Year Budget</th>
-                                <th>Program Duration</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>🇷🇺 Russia (Kazan, Kemerovo, Tver)</strong></td>
-                                <td>₹2.5L – ₹5.0L / yr</td>
-                                <td>₹1.5L – ₹3.0L / yr (Indian Mess)</td>
-                                <td class="total-col" style="color:var(--primary-navy);">₹ 21 Lakhs – ₹ 40 Lakhs</td>
-                                <td>6 Years</td>
-                            </tr>
-                            <tr>
-                                <td><strong>🇰🇿 Kazakhstan (Kazakh National)</strong></td>
-                                <td>₹4.5L – ₹5.5L / yr</td>
-                                <td>₹2.3L – ₹2.8L / yr</td>
-                                <td class="total-col" style="color:var(--primary-navy);">₹ 25 Lakhs – ₹ 35 Lakhs</td>
-                                <td>5 Years</td>
-                            </tr>
-                            <tr>
-                                <td><strong>🇺🇿 Uzbekistan (Tashkent Med Acad)</strong></td>
-                                <td>₹4.0L – ₹5.0L / yr</td>
-                                <td>₹2.0L – ₹2.5L / yr</td>
-                                <td class="total-col" style="color:var(--primary-navy);">₹ 22 Lakhs – ₹ 30 Lakhs</td>
-                                <td>5 + 1 Years</td>
-                            </tr>
-                            <tr>
-                                <td><strong>🇰🇬 Kyrgyzstan (Osh State Univ)</strong></td>
-                                <td>₹3.5L – ₹4.5L / yr</td>
-                                <td>₹1.8L – ₹2.2L / yr</td>
-                                <td class="total-col" style="color:var(--primary-navy);">₹ 18 Lakhs – ₹ 25 Lakhs</td>
-                                <td>5 Years</td>
-                            </tr>
-                            <tr>
-                                <td><strong>🇬🇪 Georgia (Tbilisi State, Batumi)</strong></td>
-                                <td>₹5.0L – ₹7.0L / yr</td>
-                                <td>₹3.0L – ₹4.0L / yr</td>
-                                <td class="total-col" style="color:var(--primary-navy);">₹ 35 Lakhs – ₹ 55 Lakhs</td>
-                                <td>6 Years (Europe Route)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="budget-cards-grid">
+                    <!-- Russia -->
+                    <div class="budget-card">
+                        <div class="bc-header">
+                            <div class="bc-country">
+                                <span class="table-flag">🇷🇺</span>
+                                <div>
+                                    <h4>Russia</h4>
+                                    <small>Kazan, Kemerovo, Tver, Bashkir</small>
+                                </div>
+                            </div>
+                            <span class="badge badge-green">6 Years</span>
+                        </div>
+                        <div class="bc-body">
+                            <div class="bc-stat">
+                                <span class="bc-label">Avg. Tuition / Year</span>
+                                <strong class="bc-val">₹2.5L – ₹5.0L / yr</strong>
+                            </div>
+                            <div class="bc-stat">
+                                <span class="bc-label">Hostel & Living / Year</span>
+                                <strong class="bc-val">₹1.5L – ₹3.0L / yr (Indian Mess)</strong>
+                            </div>
+                            <div class="bc-highlight-box">
+                                <span>Total 6-Year Budget</span>
+                                <h3 style="color:var(--primary-navy); font-size:1.25rem;">₹ 21 Lakhs – ₹ 40 Lakhs</h3>
+                            </div>
+                        </div>
+                        <a href="#prospectusModal" class="bc-btn">Check Russia Breakdown <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Kazakhstan -->
+                    <div class="budget-card">
+                        <div class="bc-header">
+                            <div class="bc-country">
+                                <span class="table-flag">🇰🇿</span>
+                                <div>
+                                    <h4>Kazakhstan</h4>
+                                    <small>Kazakh National, Semey, South Kazakh</small>
+                                </div>
+                            </div>
+                            <span class="badge badge-blue">5 Years Direct</span>
+                        </div>
+                        <div class="bc-body">
+                            <div class="bc-stat">
+                                <span class="bc-label">Avg. Tuition / Year</span>
+                                <strong class="bc-val">₹4.5L – ₹5.5L / yr</strong>
+                            </div>
+                            <div class="bc-stat">
+                                <span class="bc-label">Hostel & Living / Year</span>
+                                <strong class="bc-val">₹2.3L – ₹2.8L / yr</strong>
+                            </div>
+                            <div class="bc-highlight-box">
+                                <span>Total Course Budget</span>
+                                <h3 style="color:var(--primary-navy); font-size:1.25rem;">₹ 25 Lakhs – ₹ 35 Lakhs</h3>
+                            </div>
+                        </div>
+                        <a href="#prospectusModal" class="bc-btn">Check Kazakhstan Breakdown <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Uzbekistan -->
+                    <div class="budget-card">
+                        <div class="bc-header">
+                            <div class="bc-country">
+                                <span class="table-flag">🇺🇿</span>
+                                <div>
+                                    <h4>Uzbekistan</h4>
+                                    <small>Tashkent Med Acad, Samarkand, Bukhara</small>
+                                </div>
+                            </div>
+                            <span class="badge badge-red">5 + 1 Years</span>
+                        </div>
+                        <div class="bc-body">
+                            <div class="bc-stat">
+                                <span class="bc-label">Avg. Tuition / Year</span>
+                                <strong class="bc-val">₹4.0L – ₹5.0L / yr</strong>
+                            </div>
+                            <div class="bc-stat">
+                                <span class="bc-label">Hostel & Living / Year</span>
+                                <strong class="bc-val">₹2.0L – ₹2.5L / yr</strong>
+                            </div>
+                            <div class="bc-highlight-box">
+                                <span>Total Course Budget</span>
+                                <h3 style="color:var(--primary-navy); font-size:1.25rem;">₹ 22 Lakhs – ₹ 30 Lakhs</h3>
+                            </div>
+                        </div>
+                        <a href="#prospectusModal" class="bc-btn">Check Uzbekistan Breakdown <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Kyrgyzstan -->
+                    <div class="budget-card">
+                        <div class="bc-header">
+                            <div class="bc-country">
+                                <span class="table-flag">🇰🇬</span>
+                                <div>
+                                    <h4>Kyrgyzstan</h4>
+                                    <small>Osh State, Kyrgyz State, Asian Med</small>
+                                </div>
+                            </div>
+                            <span class="badge badge-green">5 Years Direct</span>
+                        </div>
+                        <div class="bc-body">
+                            <div class="bc-stat">
+                                <span class="bc-label">Avg. Tuition / Year</span>
+                                <strong class="bc-val">₹3.5L – ₹4.5L / yr</strong>
+                            </div>
+                            <div class="bc-stat">
+                                <span class="bc-label">Hostel & Living / Year</span>
+                                <strong class="bc-val">₹1.8L – ₹2.2L / yr</strong>
+                            </div>
+                            <div class="bc-highlight-box">
+                                <span>Total Course Budget</span>
+                                <h3 style="color:var(--primary-navy); font-size:1.25rem;">₹ 18 Lakhs – ₹ 25 Lakhs</h3>
+                            </div>
+                        </div>
+                        <a href="#prospectusModal" class="bc-btn">Check Kyrgyzstan Breakdown <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Georgia -->
+                    <div class="budget-card">
+                        <div class="bc-header">
+                            <div class="bc-country">
+                                <span class="table-flag">🇬🇪</span>
+                                <div>
+                                    <h4>Georgia</h4>
+                                    <small>Tbilisi State, Batumi Shota, SEU Tbilisi</small>
+                                </div>
+                            </div>
+                            <span class="badge badge-red">6 Years (Europe Route)</span>
+                        </div>
+                        <div class="bc-body">
+                            <div class="bc-stat">
+                                <span class="bc-label">Avg. Tuition / Year</span>
+                                <strong class="bc-val">₹5.0L – ₹7.0L / yr</strong>
+                            </div>
+                            <div class="bc-stat">
+                                <span class="bc-label">Hostel & Living / Year</span>
+                                <strong class="bc-val">₹3.0L – ₹4.0L / yr</strong>
+                            </div>
+                            <div class="bc-highlight-box">
+                                <span>Total Course Budget</span>
+                                <h3 style="color:var(--primary-navy); font-size:1.25rem;">₹ 35 Lakhs – ₹ 55 Lakhs</h3>
+                            </div>
+                        </div>
+                        <a href="#prospectusModal" class="bc-btn">Check Georgia Breakdown <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
 

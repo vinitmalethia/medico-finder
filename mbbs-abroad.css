@@ -575,9 +575,159 @@
     color: var(--primary-red-dark);
 }
 
+/* ===== ANIMATED 6-YEAR BUDGET BREAKDOWN CARDS ===== */
+.budget-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 24px;
+}
+
+.budget-card {
+    background: white;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.budget-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--primary-navy);
+    transition: all 0.3s ease;
+}
+
+.budget-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+    border-color: #cbd5e1;
+}
+
+.budget-card:hover::before {
+    height: 6px;
+    background: var(--primary-red);
+}
+
+.bc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.bc-country {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bc-country h4 {
+    font-size: 1.12rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+.bc-country small {
+    display: block;
+    font-size: 0.76rem;
+    color: var(--text-gray);
+    margin-top: 2px;
+}
+
+.bc-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.bc-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 12px;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #f1f5f9;
+    font-size: 0.82rem;
+}
+
+.bc-label {
+    color: var(--text-gray);
+    font-size: 0.76rem;
+}
+
+.bc-val {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.bc-highlight-box {
+    background: #eff6ff;
+    border: 1px dashed #bfdbfe;
+    border-radius: 10px;
+    padding: 12px 14px;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.bc-highlight-box span {
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #1e40af;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.bc-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 10px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    color: var(--text-dark);
+    font-size: 0.84rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.25s;
+}
+
+.budget-card:hover .bc-btn {
+    background: var(--primary-navy);
+    color: white;
+    border-color: var(--primary-navy);
+}
+
+.bc-btn i {
+    font-size: 0.78rem;
+    transition: transform 0.2s;
+}
+
+.budget-card:hover .bc-btn i {
+    transform: translateX(4px);
+}
+
 /* ===== STAY & ACCOMMODATION GUIDELINES ===== */
 .stay-guidelines-box {
-    margin-top: 36px;
+    margin-top: 48px;
     background: #f8fafc;
     border-radius: 14px;
     border: 1px solid #e2e8f0;
